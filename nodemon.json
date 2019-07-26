@@ -1,0 +1,13 @@
+{
+  "exec": "ts-node --project tsconfig.server.json src/server",
+  "ext": "js jsx ts tsx",
+  "ignore": [
+    "src/server/**/*.test.ts",
+    "src/static/coverage/**/*",
+    "src/static/docs/**/*"
+  ],
+  "watch": [
+    "src/server",
+    "src/static"
+  ]
+}
