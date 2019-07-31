@@ -6,5 +6,5 @@ module.exports = {
 		'prettier/prettier': true,
 		'declaration-block-no-duplicate-properties': true
 	},
-	ignoreFiles: ['dist/**/*', 'node_modules/**/*', 'src/client/static/coverage/**/*', 'src/client/static/docs/**/*']
+	ignoreFiles: ['dist/**/*', 'node_modules/**/*', 'src/client/assets/**/*', 'src/client/static/**/*']
 };

@@ -1,63 +1,30 @@
 {
-  "defaultSeverity": "error",
-  "extends": [
-    "tslint:latest",
-    "tslint-react",
-    "tslint-config-prettier"
-  ],
-  "jsRules": {
-    "no-any": true,
-    "no-console": [
-      true,
-      "log"
-    ],
-    "no-submodule-imports": false,
-    "object-literal-sort-keys": false,
-    "one-variable-per-declaration": false,
-    "ordered-imports": false,
-    "prettier": [
-      true,
-      "prettier.config.js"
-    ],
-    "variable-name": [
-      true,
-      "ban-keywords",
-      "check-format",
-      "allow-leading-underscore",
-      "allow-pascal-case"
-    ]
-  },
-  "rules": {
-    "no-any": true,
-    "no-console": [
-      true,
-      "log"
-    ],
-    "no-submodule-imports": false,
-    "object-literal-sort-keys": false,
-    "one-variable-per-declaration": false,
-    "ordered-imports": false,
-    "prettier": [
-      true,
-      "prettier.config.js"
-    ],
-    "variable-name": [
-      true,
-      "ban-keywords",
-      "check-format",
-      "allow-leading-underscore",
-      "allow-pascal-case"
-    ]
-  },
-  "linterOptions": {
-    "exclude": [
-      "dist/**/*",
-      "node_modules/**/*",
-      "src/client/static/coverage/**/*",
-      "src/client/static/docs/**/*"
-    ]
-  },
-  "rulesDirectory": [
-    "tslint-plugin-prettier"
-  ]
+	"defaultSeverity": "error",
+	"extends": ["tslint:latest", "tslint-react", "tslint-config-prettier"],
+	"jsRules": {
+		"no-any": true,
+		"no-console": [true, "log"],
+		"no-implicit-dependencies": [true],
+		"no-submodule-imports": false,
+		"object-literal-sort-keys": false,
+		"one-variable-per-declaration": false,
+		"ordered-imports": false,
+		"prettier": [true, "prettier.config.js"],
+		"variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore", "allow-pascal-case"]
+	},
+	"rules": {
+		"no-any": true,
+		"no-console": [true, "log"],
+		"no-implicit-dependencies": [false],
+		"no-submodule-imports": false,
+		"object-literal-sort-keys": false,
+		"one-variable-per-declaration": false,
+		"ordered-imports": false,
+		"prettier": [true, "prettier.config.js"],
+		"variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore", "allow-pascal-case"]
+	},
+	"linterOptions": {
+		"exclude": ["dist/**/*", "node_modules/**/*", "src/client/static/**/*"]
+	},
+	"rulesDirectory": ["tslint-plugin-prettier"]
 }

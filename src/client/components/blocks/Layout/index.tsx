@@ -1,11 +1,10 @@
 import React, {FC} from 'react';
-import GlobalStyles from '../../../common/styles/global';
-import Header from '../Header';
+
+import Header from 'blocks/Header';
 
 const Layout: FC = ({children}) => {
 	return (
 		<>
-			<GlobalStyles />
 			<Header />
 			{children}
 		</>

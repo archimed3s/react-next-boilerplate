@@ -1,4 +1,7 @@
-module.exports = {
+const withPlugins = require('next-compose-plugins'),
+	optimizedImages = require('next-optimized-images');
+
+module.exports = withPlugins([[optimizedImages]], {
 	distDir: '../../dist',
 	webpack(config, {}) {
 		config.module.rules.push({
@@ -21,4 +24,4 @@ module.exports = {
 		});
 		return config;
 	}
-};
+});

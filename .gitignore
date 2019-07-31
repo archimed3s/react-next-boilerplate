@@ -1,5 +1,7 @@
 /.idea/
 /dist/
 /node_modules/
+/src/client/static/coverage/
+/src/client/static/docs/
 .DS_Store
 /package-lock.json

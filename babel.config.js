@@ -1,3 +1,15 @@
+const moduleResolver = [
+	'module-resolver',
+	{
+		alias: {
+			assets: './src/client/assets',
+			common: './src/client/common',
+			blocks: './src/client/components/blocks',
+			elements: './src/client/components/elements'
+		}
+	}
+];
+
 module.exports = {
 	env: {
 		production: {
@@ -9,7 +21,8 @@ module.exports = {
 						displayName: false,
 						pure: true
 					}
-				]
+				],
+				moduleResolver
 			]
 		},
 		development: {
@@ -21,7 +34,8 @@ module.exports = {
 						displayName: true,
 						minify: false
 					}
-				]
+				],
+				moduleResolver
 			]
 		},
 		test: {
@@ -35,14 +49,7 @@ module.exports = {
 					}
 				]
 			],
-			plugins: [
-				[
-					'styled-components',
-					{
-						ssr: true
-					}
-				]
-			]
+			plugins: [['styled-components'], moduleResolver]
 		}
 	}
 };

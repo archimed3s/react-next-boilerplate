@@ -1,41 +1,43 @@
 {
-  "compileOnSave": false,
-  "compilerOptions": {
-    "allowJs": true,
-    "allowSyntheticDefaultImports": true,
-    "baseUrl": "./src",
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "module": "esnext",
-    "moduleResolution": "node",
-    "noEmit": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "preserveConstEnums": true,
-    "removeComments": false,
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "sourceMap": true,
-    "strict": true,
-    "target": "es5",
-    "typeRoots": [
-      "node_modules/@types"
-    ]
-  },
-  "exclude": [
-    "dist",
-    "node_modules"
-  ],
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
-  ]
+	"compileOnSave": false,
+	"compilerOptions": {
+		"allowJs": true,
+		"allowSyntheticDefaultImports": true,
+		"baseUrl": "./src",
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"isolatedModules": true,
+		"jsx": "preserve",
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"module": "esnext",
+		"moduleResolution": "node",
+		"noEmit": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"paths": {
+			"assets/*": ["client/assets/*"],
+			"blocks/*": ["client/components/blocks/*"],
+			"common/*": ["client/common/*"],
+			"elements/*": ["client/components/elements/*"]
+		},
+		"preserveConstEnums": true,
+		"removeComments": false,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"sourceMap": true,
+		"strict": true,
+		"target": "es5",
+		"typeRoots": ["node_modules/@types"]
+	},
+	"exclude": [
+		"dist",
+		"node_modules",
+		"src/client/assets/**/*",
+		"src/client/static/**/*",
+		"**/*.spec.ts",
+		"**/*.spec.tsx",
+		"**/*.test.ts",
+		"**/*.test.tsx"
+	],
+	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
 }
